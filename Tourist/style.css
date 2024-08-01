@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body{
+    overflow-x: hidden;
+}
+.navbar-nav .nav-link {
+    color: white;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 100;
+    font-style: normal;
+}
+.navbar-nav .nav-link:hover {
+    color: green;
+    font-size: 20px;
+}
+.navbar-brand{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+.icon{
+    font-size: 40px;
+}
+#row1{
+    font-family:  "Merriweather", serif;
+    
+    
+}
+#row1:hover{
+    animation: name 2s infinite linear;
+}
+@keyframes name {
+    0%{
+        transform:translateY(0);
+    }
+    100%{
+        transform: translateY(-30px);
+    }
+    
+}
+
+#container:hover{
+    background-image: linear-gradient(180deg, #e2e8e5 50%, rgb(6, 95, 21) 100%);
+}
+
+.carousel-inner img{
+    background-repeat: no-repeat;
+    object-fit: cover;
+} 
+
+#row2{
+    font-family:  "Merriweather", serif;
+
+}
+#row3{
+    font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#row4{
+    font-family:  "Merriweather", serif;
+}
+#card:hover{
+    background-color: yellowgreen;
+    color: white;
+    animation: card 1s infinite ;
+}
+@keyframes card {
+    0%{
+        transform:translateY(0px);
+    }
+    100%{
+        transform: translateY(-40px);
+    }
+    
+}
+
+.card-cover{
+    opacity: 0.5;
+}
+.card-cover:hover{
+    opacity: 1;
+}
+#btn3:hover{
+    background-color: white;
+    color: black;
+
+}
+.hero5-section{
+    background-image: url("./assets/tropical-beach-resort-island-photo_195114-34051.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.parent{
+    display: grid; 
+    grid-template-columns: repeat(3, 90px);
+    grid-template-rows: repeat(2, 90px);
+    }

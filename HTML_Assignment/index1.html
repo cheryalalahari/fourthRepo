@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <style>
+        fieldset{
+            background-color:lavender;
+            width:50%;
+            margin: auto;
+            text-align: center;
+            border-radius: 20px;
+        }
+        h2{
+            color: darkblue;
+        }
+        
+        #form{
+            margin: auto;
+            color:darkred;
+    
+        }
+        .form{
+            padding: 10px;
+            margin: 10px;
+        }
+        button{
+            background-color: chartreuse;
+            border: 1px solid black;
+            padding: 15px;
+        }
+        button:hover{
+            background-color: white;
+            border: 1px solid red;
+        }
+    </style>
+
+</head>
+<body>
+    <fieldset>
+
+        <h2>Signup form</h2>
+
+        <form id="form">
+            <label for="name">Name:</label>
+            <input type="text" name="Name" id="name" placeholder="Enter your name..." required class="form">
+            <br><br> <br>
+
+            <label for="email">Email:</label>
+            <input type="email" name="Email" id="email" placeholder="Enter your email..." required class="form">
+            <br><br><br> 
+
+            <label for="gender">Gender</label>
+            <input type="radio" name="Gender" id="gender" value="Male" class="form">Male
+            <input type="radio" name="Gender" id="gender" value="Female" class="form">Female 
+            <br><br><br>
+
+            <label for="cars">Car Brands:</label>
+
+            <select name="Cars" id="cars" required class="form">
+                <option value="">-- Please choose an Option --</option>
+                <option value="Toyota">Toyota</option>
+                <option value="Ford">Ford</option>
+                <option value="Hyundai">Hyundai</option>
+                <option value="Mercedes-Benz">Mercedes-Benz</option>
+                <option value="Audi">Audi</option>
+              </select> <br> <br> <br>
+
+              <label for="age">Age:</label>
+              <input type="number" name="Age" id="age" placeholder="Enter your Age..." required class="form"> 
+              <br><br><br>
+
+              <label for="dob">Date of Birth</label>
+              <input type="date" name="DOB" id="dob" required class="form">
+              <br><br><br>
+
+              <label for="tel">PhoneNumber:</label>
+              <input type="tel" name="phonenumber" id="tel" placeholder="Enter your phonenumber..." required class="form">
+              <br><br><br> 
+
+              <label for="password">Password:</label>
+              <input type="password" name="password" id="password" placeholder="Enter your password..." class="form">
+              <br><br><br>
+
+              <label for="tc">I agree to the Terms and Conditions</label>
+              <input type="checkbox" name="Terms and Conditions" id="tc" required class="form">
+              <br><br>
+              <br>
+            
+            <button type="submit">Submit</button>
+
+        </form>
+    </fieldset>
+</body>
+</html>

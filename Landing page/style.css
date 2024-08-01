@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("./background\ image.jpeg");
+}
+.parent{
+    display: flex;
+
+}
+
+.logo,img{
+    width: 80px;
+    height: 80px;
+    margin-left: 20px;
+    margin-top: 10px;
+    border-radius: 60%;   
+}
+
+.nav_link{
+    margin-left: 800px;
+}
+
+.nav_link,ul,li,a{
+    display: flex;
+    margin-top: 10px;
+    text-decoration: none;
+    padding-left: 12px;
+    color: white;
+    font-size: 18px;
+    font-family: "Playfair Display SC", serif;
+    font-weight: 400;
+
+    
+
+}
+.nav_link i{
+    margin-top: 5px;
+}
+.nav_link,ul,li,a:hover{
+    font-size: 25px;
+    color: gold;
+}
+
+.heroSection {
+    display: flex;
+
+
+}
+.part_one h1{ 
+    margin-top: 220px;
+    color: white;
+    font-size: 4em;
+    margin-left: 80px;
+   
+}
+.part_one h1:hover{
+    color: rgb(240, 105, 56);
+}
+.part_one p{
+     line-height: 40px;
+     color: white;
+     margin-left: 80px;
+}
+
+.btn{
+    width: 80px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px 10px;
+    margin-top: 10px;
+    margin-left: 80px;
+}
+
+.btn:hover{
+    background-color: rgb(247, 159, 8);
+    border: 1px solid rgb(247, 159, 8);
+}
+
+.part_two{
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    grid-template-rows: repeat(2, 200px);
+    color: white;
+    grid-gap: 40px;
+    margin-left: 150px;
+    margin-top: 10px;
+
+
+}
+
+.childs{
+
+    border-radius: 20px;
+    padding-top: 5px;
+    padding-left: 7px;
+    line-height: 30px;
+    
+}
+#items1{
+    background-image: url("./item1.jpeg");
+    
+}
+
+
+#items2{
+    background-image: url("./item2.jpeg");
+    
+   
+}
+
+
+#items3{
+    background-image: url("./item3.jpeg");
+    
+}
+
+#items4{
+    background-image: url("./item4.jpeg");
+    
+    
+}
+
+.childs:hover{
+    animation: desert 1s infinite;
+}
+
+@keyframes desert{
+    from{
+        transform: translateY(0px);
+    }
+    to{
+        transform: translateY(-10px);
+    }
+}
+
+@media  only screen and (min-width:375px) and (max-width:932px) {
+    .nav_link ul{
+        margin-right: 900px;
+    }
+    .heroSection{
+        display: block;
+        margin-left: 350px;
+        width: 400px;
+        font-size: 2em;
+  
+    }
+    .part_two{
+        display: grid;
+        grid-template-columns: repeat(1, 400px);
+        grid-template-rows: repeat(4, 400px);
+        justify-content: center;
+        margin-left: 280px;
+        margin-right: 380px;
+        margin-top: 180px;
+    
+    }
+
+}

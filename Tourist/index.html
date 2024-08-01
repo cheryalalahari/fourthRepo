@@ -1,0 +1,852 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tourist</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- navbar starts here  -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark ">
+            <div class="container-fluid mx-5">
+                <a class="navbar-brand fw-bold d-flex text-success" href="#"><ion-icon name="location-outline"
+                        class="icon "></ion-icon>
+                    <h2>Tourist</h2>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav ms-auto mb-2 mb-md-0 gap-4">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Packages</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Pages
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Destination</a></li>
+                                <li><a class="dropdown-item" href="#">Booking</a></li>
+                                <li><a class="dropdown-item" href="#">Travel Guides</a></li>
+                                <li><a class="dropdown-item" href="#">Testmonial</a></li>
+                            </ul>
+
+                        </li>
+                        <li class="nav-item me-3">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+
+                    </ul>
+
+                    <button class="btn btn-outline-success fw-bold" type="submit">Register</button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- hero-section starts here  -->
+        <div class="hero-section">
+            <div id="carouselExampleCaptions" class="carousel slide ">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./assets/bg-1.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block" id="row1">
+                            <h1 class=" fw-bold">Enjoy Your Vacation With Us</h1> <br>
+                            <p>Tempor erat elitr rebum at clita diam amet diam et eos erat ipsum
+                                lorem sit</p> <br>
+                            <input type="search" id="search" placeholder="Search" class="px-5 text-center"> <br>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/river-3748199_1280.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block" id="row1">
+                            <h1 class=" fw-bold ">Enjoy Your Vacation With Us</h1> <br>
+                            <p>Tempor erat elitr rebum at clita diam amet diam et eos erat ipsum
+                                lorem sit</p> <br>
+                            <input type="search" id="search" placeholder="Search" class="px-5 text-center"> <br>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/singapore-cityscape-twilight_335224-686.avif" class="d-block w-100"
+                            alt="...">
+                        <div class="carousel-caption d-none d-md-block" id="row1">
+                            <h1 class=" fw-bold ">Enjoy Your Vacation With Us</h1> <br>
+                            <p>Tempor erat elitr rebum at clita diam amet diam et eos erat ipsum
+                                lorem sit</p> <br>
+                            <input type="search" id="search" placeholder="Search" class="px-5 text-center"> <br>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- main  starts here  -->
+    <main>
+        <!-- hero-container start here  -->
+        <div class="hero-container">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                <div class="col-10 col-sm-8 col-lg-6 mx-auto">
+                    <img src="./assets/castle-4357443_1280.jpg" class="d-block mx-lg-auto " alt="Bootstrap Themes"
+                        width="400" height="500" loading="lazy">
+                </div>
+                <div class="col-lg-6" id="row2">
+                    <h6 class="display-5 fw-bold text-success  mx-5 mb-3 fs-5">ABOUT US <span
+                            class="fw-bold fs-5">______</span></h6>
+                    <h1 class="display-5 fw-bold text-body-emphasis  mx-5 mb-3 fs-1">Welcome To <span
+                            class="text-success">Tourist</span> </h1>
+                    <p class="lead mx-5">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet
+                        diam
+                        et eos. Clitaeratipsum et lorem et sit.</p>
+                    <p class="lead mx-5">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet
+                        diam
+                        et eos. Clitaeratipsum et lorem et sit.</p>
+                    <div class="row px-5" id="row3">
+                        <div class="col-lg-3">
+                            <p class=""><ion-icon class="icon1" name="arrow-forward-outline"></ion-icon>First Class
+                                Flights </p>
+                            <p> <ion-icon class="icon1" name="arrow-forward-outline"></ion-icon>5 Star Accommodations
+                            </p>
+                            <p><ion-icon class="icon1" name="arrow-forward-outline"></ion-icon>150 Premium City Tours
+                            </p>
+                        </div>
+                        <div class="col-lg-3" id="col1">
+                            <p class="lahari1"> <ion-icon class="icon1"
+                                    name="arrow-forward-outline"></ion-icon>Handpicked
+                                Hotels</p>
+                            <p><ion-icon class="icon1" name="arrow-forward-outline"></ion-icon>Latest Model Vehicles
+                            </p>
+                            <p><ion-icon class="icon1" name="arrow-forward-outline"></ion-icon> 24/7 Service</p>
+                        </div>
+
+
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                            <button class="btn fw-bold  btn-outline-success ">Read More</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- hero1-container starts here  -->
+        <div class="hero1-container">
+            <div class="row g-4 " id="row3">
+                <div class="col-12">
+                    <h5 class=" text-center text-success"><span class="fw-bold fs-5">______</span>SERVICES<span
+                            class="fw-bold fs-5">______</span></h5>
+                    <h1 class="text-center">Our Services</h1>
+                </div>
+            </div>
+        </div>
+
+        <!-- hero2-container starts here  -->
+        <div class="hero2-container">
+            <div class="row  mx-5 mt-4 g-4 " id="row4">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="card" style="width: 16rem;" id="card">
+                        <div class="card-body">
+                            <h5 class="card-title"><img
+                                    src="./assets/3d-vector-digital-spherical-object-made-using-square-facets-low-poly-shape-green-polygonal-globe-abstract-form-use-web-design_570429-9609.jpg"
+                                    alt="" width="40" height="40"></h5>
+                            <h3 class="card-subtitle mb-2 text-body-secondary">World Wide <br>Tours</h3>
+                            <p class="card-text">Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="card" style="width: 16rem;" id="card">
+                        <div class="card-body">
+                            <h5 class="card-title"><img
+                                    src="./assets/vector-design-office-building-icon-style_1250006-2563.jpg" alt=""
+                                    width="40" height="40"></h5>
+                            <h3 class="card-subtitle mb-2 text-body-secondary">Hotel <br> Reservation</h3>
+                            <p class="card-text">Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam
+                            </p>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="card" style="width: 16rem;" id="card">
+                        <div class="card-body">
+                            <h5 class="card-title"><img src="./assets/user-circles-multiple-colours-set_78370-4702.jpg"
+                                    alt="" width="40" height="40"></h5>
+                            <h3 class="card-subtitle mb-2 text-body-secondary">Travel <br> Guides</h3>
+                            <p class="card-text">Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="card" style="width: 16rem;" id="card">
+                        <div class="card-body">
+                            <h5 class="card-title"><img src="./assets/settings icon.jpg" alt="" width="40" height="40">
+                            </h5>
+                            <h3 class="card-subtitle mb-2 text-body-secondary">
+                                Event <br>Management</h3>
+                            <p class="card-text">Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- hero1-container starts here  -->
+        <div class="hero1-container">
+            <div class="row mt-5" id="row3">
+                <div class="col-12">
+                    <h5 class=" text-center text-success"><span class="fw-bold fs-5">______</span>DESTINATION<span
+                            class="fw-bold fs-5">______</span></h5>
+                    <h1 class="text-center">Popular Destination</h1>
+                </div>
+            </div>
+        </div>
+
+        <!-- hero3-container starts here  -->
+        <div class="hero3-container">
+            <div class="container px-4 py-5" id="custom-cards">
+
+                <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+                    <div class="col">
+                        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                            style="background-image: url('./assets/bridge-111326_1280.jpg');background-size: cover;">
+                            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Short title, long jacket</h3>
+                                <ul class="d-flex list-unstyled mt-auto">
+                                    <li class="me-auto">
+                                        <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32"
+                                            class="rounded-circle border border-white ">
+                                    </li>
+                                    <li class="d-flex align-items-center me-3">
+                                        <svg class="bi me-2" width="1em" height="1em">
+                                            <use xlink:href="#geo-fill"></use>
+                                        </svg>
+                                        <small>Malaysia</small>
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <svg class="bi me-2" width="1em" height="1em">
+                                            <use xlink:href="#calendar3"></use>
+                                        </svg>
+                                        <small>3d</small>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                            style="background-image: url('./assets/pexels-photo-70441.jpeg');background-size: cover;">
+                            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Much longer title that wraps to
+                                    multiple lines
+                                </h3>
+                                <ul class="d-flex list-unstyled mt-auto">
+                                    <li class="me-auto">
+                                        <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32"
+                                            class="rounded-circle border border-white">
+                                    </li>
+                                    <li class="d-flex align-items-center me-3">
+                                        <svg class="bi me-2" width="1em" height="1em">
+                                            <use xlink:href="#geo-fill"></use>
+                                        </svg>
+                                        <small>USA</small>
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <svg class="bi me-2" width="1em" height="1em">
+                                            <use xlink:href="#calendar3"></use>
+                                        </svg>
+                                        <small>4d</small>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                            style="background-image: url('./assets/tower-5317512_1280.jpg');background-size: cover;">
+                            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Another longer title belongs here</h3>
+                                <ul class="d-flex list-unstyled mt-auto">
+                                    <li class="me-auto">
+                                        <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32"
+                                            class="rounded-circle border border-white">
+                                    </li>
+                                    <li class="d-flex align-items-center me-3">
+                                        <svg class="bi me-2" width="1em" height="1em">
+                                            <use xlink:href="#geo-fill"></use>
+                                        </svg>
+                                        <small>Paris</small>
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <svg class="bi me-2" width="1em" height="1em">
+                                            <use xlink:href="#calendar3"></use>
+                                        </svg>
+                                        <small>5d</small>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- section start here  -->
+    <section>
+
+        <!-- hero1-container starts here  -->
+        <div class="hero1-container">
+            <div class="row mt-5" id="row3">
+                <div class="col-12">
+                    <h5 class="text-success text-center"><span class="fw-bold fs-5">______</span>PACKAGES<span
+                            class="fw-bold fs-5">______</span></h5>
+                    <h1 class="text-center">Awesome Packages</h1>
+                </div>
+            </div>
+        </div>
+
+        <!-- hero4-container starts here  -->
+        <div class="hero4-container">
+            <div class="album py-5">
+                <div class="container">
+
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" id="row4">
+                        <div class="col g-5">
+                            <div class="card shadow-sm" id="container">
+                                <img src="./assets/long-tail-boat-turquoise-crystal-clear-sea-water-with-limestone-cliff-mountain-phra-nang-beach-krabi-thailand_554837-867.jpg"
+                                    alt="">
+                                <ul
+                                    class="d-flex flex-row flex-start justify-content-between list-unstyled mt-auto align-items-center px-1">
+                                    <li><ion-icon name="location-outline" class="text-success"></ion-icon> Thailand</li>
+                                    <li><ion-icon name="calendar-number-outline" class="text-success"></ion-icon> 3 days
+                                    </li>
+                                    <li><ion-icon name="person-outline" class="text-success"></ion-icon> 2 Persons</li>
+                                </ul>
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">$149.00</h5>
+                                    <h5 class="card-title text-center">⭐⭐⭐⭐⭐</h5>
+                                    <p class="card-text text-center">Tempor erat elitr rebum at clita. Diam dolor diam
+                                        ipsum
+                                        sit
+                                        diam amet diam eos</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group mx-auto">
+                                            <a href="#" class="btn btn-success" id="btn3">Read more</a>
+                                            <a href="#" class="btn btn-success" id="btn3">Book Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col g-5">
+                            <div class="card shadow-sm" id="container">
+                                <img src="./assets/two-people-looking-beach-with-beach-background_198067-859599.jpg"
+                                    alt="">
+                                <ul
+                                    class="d-flex flex-row flex-start justify-content-between list-unstyled mt-auto align-items-center px-1">
+                                    <li><ion-icon name="location-outline" class="text-success"></ion-icon> Malaysia</li>
+                                    <li><ion-icon name="calendar-number-outline" class="text-success"></ion-icon> 3 days
+                                    </li>
+                                    <li><ion-icon name="person-outline" class="text-success"></ion-icon> 2 Persons</li>
+                                </ul>
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">$139.00</h5>
+                                    <h5 class="card-title text-center">⭐⭐⭐⭐⭐</h5>
+                                    <p class="card-text text-center">Tempor erat elitr rebum at clita. Diam dolor diam
+                                        ipsum
+                                        sit
+                                        diam amet diam eos</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group mx-auto">
+                                            <a href="#" class="btn btn-success" id="btn3">Read more</a>
+                                            <a href="#" class="btn btn-success" id="btn3">Book Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col g-5">
+                            <div class="card shadow-sm" id="container">
+                                <img src="./assets/close-up-boat-moored-sea_1048944-3881231.jpg" alt="">
+                                <ul
+                                    class="d-flex flex-row flex-start justify-content-between list-unstyled mt-auto align-items-center px-1">
+                                    <li><ion-icon name="location-outline" class="text-success"></ion-icon> Indonesia
+                                    </li>
+                                    <li><ion-icon name="calendar-number-outline" class="text-success"></ion-icon> 3 days
+                                    </li>
+                                    <li><ion-icon name="person-outline" class="text-success"></ion-icon> 2 Persons</li>
+                                </ul>
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">$189.00</h5>
+                                    <h5 class="card-title text-center">⭐⭐⭐⭐⭐</h5>
+                                    <p class="card-text text-center">Tempor erat elitr rebum at clita. Diam dolor diam
+                                        ipsum
+                                        sit
+                                        diam amet diam eos</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group mx-auto">
+                                            <a href="#" class="btn btn-success" id="btn3">Read more</a>
+                                            <a href="#" class="btn btn-success" id="btn3">Book Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col g-5">
+                            <div class="card shadow-sm" id="container">
+                                <img src="./assets/holiday-631203_1280.jpg" alt="">
+                                <ul
+                                    class="d-flex flex-row flex-start justify-content-between list-unstyled mt-auto align-items-center px-1">
+                                    <li><ion-icon name="location-outline" class="text-success"></ion-icon> Thailand</li>
+                                    <li><ion-icon name="calendar-number-outline" class="text-success"></ion-icon> 3 days
+                                    </li>
+                                    <li><ion-icon name="person-outline" class="text-success"></ion-icon> 2 Persons</li>
+                                </ul>
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">$149.00</h5>
+                                    <h5 class="card-title text-center">⭐⭐⭐⭐⭐</h5>
+                                    <p class="card-text text-center">Tempor erat elitr rebum at clita. Diam dolor diam
+                                        ipsum
+                                        sit
+                                        diam amet diam eos</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group mx-auto">
+                                            <a href="#" class="btn btn-success" id="btn3">Read more</a>
+                                            <a href="#" class="btn btn-success" id="btn3">Book Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col g-5">
+                            <div class="card shadow-sm" id="container">
+                                <img src="./assets/jetty-1807471_1280.jpg" alt="">
+                                <ul
+                                    class="d-flex flex-row flex-start justify-content-between list-unstyled mt-auto align-items-center px-1">
+                                    <li><ion-icon name="location-outline" class="text-success"></ion-icon> Malaysia</li>
+                                    <li><ion-icon name="calendar-number-outline" class="text-success"></ion-icon> 3 days
+                                    </li>
+                                    <li><ion-icon name="person-outline" class="text-success"></ion-icon> 2 Persons</li>
+                                </ul>
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">$139.00</h5>
+                                    <h5 class="card-title text-center">⭐⭐⭐⭐⭐</h5>
+                                    <p class="card-text text-center">Tempor erat elitr rebum at clita. Diam dolor diam
+                                        ipsum
+                                        sit
+                                        diam amet diam eos.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group mx-auto">
+                                            <a href="#" class="btn btn-success" id="btn3">Read more</a>
+                                            <a href="#" class="btn btn-success" id="btn3">Book Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col g-5">
+                            <div class="card shadow-sm" id="container">
+                                <img src="./assets/hallstatt-3609863_1280.jpg" alt="">
+                                <ul
+                                    class="d-flex flex-row flex-start justify-content-between list-unstyled mt-auto align-items-center px-1">
+                                    <li><ion-icon name="location-outline" class="text-success"></ion-icon> Indonesia
+                                    </li>
+                                    <li><ion-icon name="calendar-number-outline" class="text-success"></ion-icon> 3 days
+                                    </li>
+                                    <li><ion-icon name="person-outline" class="text-success"></ion-icon> 2 Persons</li>
+                                </ul>
+
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">$189.00</h5>
+                                    <h5 class="card-title text-center">⭐⭐⭐⭐⭐</h5>
+                                    <p class="card-text text-center">Tempor erat elitr rebum at clita. Diam dolor diam
+                                        ipsum
+                                        sit
+                                        diam amet diam eos.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group mx-auto">
+                                            <a href="#" class="btn btn-success" id="btn3">Read more</a>
+                                            <a href="#" class="btn btn-success" id="btn3">Book Now</a>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- hero5-container starts here  -->
+        <div class="hero5-section row align-items-center g-lg-5 mt-2" id="row4">
+            <div class="col-lg-7 text-center text-lg-start text-white">
+                <h5 class="mx-5 ">BOOKING</h5>
+                <h1 class="display-4 fw-bold   mb-3 fs-1 mx-5">Online Booking</h1>
+                <p class="col-lg-10 fs-5 mx-5">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam
+                    amet
+                    diam et eos. Clita
+                    erat
+                    ipsum et lorem et sit.</p>
+                <p class="col-lg-10 fs-5 mx-5">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam
+                    amet
+                    diam et eos. Clita
+                    erat
+                    ipsum et lorem et sit.</p>
+                <button class="btn btn-success mx-5" id="btn3">Read More</button>
+            </div>
+            <div class="col-md-10 mx-auto col-lg-5">
+                <form class="p-4 p-md-5 ">
+                    <h1 class="text-white">Book A Tour</h1>
+
+
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="Your Name">
+                        <label for="floatingInput">Name</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="Your Email">
+                        <label for="floatingInput">Email address</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="date" class="form-control" id="floatingPassword" placeholder="Date & Time">
+                        <label for="floatingPassword">Date & Time</label>
+                    </div>
+                    <div class="checkbox mb-3 mx-1">
+                        <select name="destination" id="Destination">
+                            <option value="Destination">Destination</option>
+                            <option value="Destination1">Destination1</option>
+                            <option value="Destination2">Destination2</option>
+                            <option value="Destination3">Destination3</option>
+                        </select>
+
+                    </div>
+                    <textarea name="Special request" id="SpecialRequest" cols="40" rows="5"
+                        class="mt-3">Special Request</textarea> <br> <br>
+                    <button id="btn3" class="btn btn-success">Book Now</button>
+
+                </form>
+            </div>
+        </div>
+
+        <!-- hero1-container starts here  -->
+        <div class="hero1-container mt-5">
+            <div class="row " id="row3">
+                <div class="col-12">
+                    <h6 class="text-success text-center"><span class="fw-bold fs-5">______</span>PROCESS<span
+                            class="fw-bold fs-5">______</span></h6>
+                    <h1 class="text-center">3 Easy Steps</h1>
+                </div>
+            </div>
+        </div>
+        <!-- hero6-container starts here  -->
+        <div class="hero6-container">
+            <div class="row  mt-5 row-cols-1 row-cols-sm-2 row-cols-md-2 mx-3 g-5" id="row4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="card" style="width: 16rem;" id="card">
+                        <div class="card-body">
+                            <h5 class="card-title text-center"><img
+                                    src="./assets/global-communications-vector-icon-design-illustration_1174953-25958.jpg"
+                                    alt="" width="40" height="40"></h5>
+                            <h4 class="card-subtitle mb-2 text-body-secondary text-center">Choose A Destination</h4>
+                            <br>
+                            <p class="card-text text-center">Tempor erat elitr rebum clita dolor diam ipsum sit diam
+                                amet
+                                diam eos erat ipsum et lorem et sit sed stet lorem sit</p>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card" style="width: 16rem;" id="card">
+                        <div class="card-body">
+                            <h5 class="card-title text-center"><img
+                                    src="./assets/gambling-coin-icon-flat-color-circle-style-leisure-activity-bet-chance-roulette-jackpot_755164-20587.jpg"
+                                    alt="" width="60" height="40"></h5>
+                            <h4 class="card-subtitle mb-2 text-body-secondary text-center">Pay Online</h4> <br>
+                            <p class="card-text text-center">Tempor erat elitr rebum clita dolor diam ipsum sit diam
+                                amet
+                                diam eos erat ipsum et lorem et sit sed stet lorem sit</p>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card" style="width: 16rem;" id="card">
+                        <div class="card-body">
+                            <h5 class="card-title text-center"><img
+                                    src="./assets/landing-vector-icon-design-illustration_1174953-25277.jpg" alt=""
+                                    width="40" height="40"></h5>
+                            <h4 class="card-subtitle mb-2 text-body-secondary text-center">Fly Today</h4> <br>
+                            <p class="card-text text-body-secondary">Tempor erat elitr rebum clita dolor diam ipsum sit
+                                diam
+                                amet diam eos erat ipsum et lorem et sit sed stet lorem sit</p>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card" style="width: 16rem;" id="card">
+                        <div class="card-body">
+                            <h5 class="card-title text-center"><img src="./assets/world-map-1748403_1280.webp" alt=""
+                                    width="40" height="40"></h5>
+                            <h4 class="card-subtitle mb-2 text-body-secondary text-center">Enjoy Your Trip</h4> <br>
+                            <p class="card-text text-body-secondary">Tempor erat elitr rebum clita dolor diam ipsum sit
+                                diam
+                                amet diam eos erat ipsum et lorem et sit sed stet lorem sit</p>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- hero1-container starts here  -->
+        <div class="hero1-container">
+            <div class="row mt-5" id="row3">
+                <div class="col-12">
+                    <h6 class="text-success text-center"><span class="fw-bold fs-5">______</span>TRAVEL GUIDE<span
+                            class="fw-bold fs-5">______</span></h6>
+                    <h1 class="text-center">Meet Our Guide</h1>
+                </div>
+            </div>
+        </div>
+
+        <!-- hero7-container starts here  -->
+        <div class="hero7-container ">
+            <div class="row g-4 mt-5 mx-5" id="row4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="card" style="width: 14rem;" id="container">
+                        <img src="./assets/artist-white_1368-6282.jpg" class="card-img-top" alt="...">
+                        <ul class="d-flex flex-row justify-content-evenly list-unstyled px-5 fs-5">
+                            <li><ion-icon name="logo-facebook"></ion-icon></li>
+                            <li><ion-icon name="logo-twitter"></ion-icon></li>
+                            <li><ion-icon name="logo-instagram"></ion-icon></li>
+                        </ul>
+                        <div class="card-body">
+                            <h4 class="card-title text-center">Full Name</h4>
+                            <p class="card-text text-center">Designation</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card" style="width: 14rem;" id="container">
+                        <img src="./assets/smiley-businesswoman-posing-outdoors-with-arms-crossed_23-2148767052.jpg"
+                            class="card-img-top" alt="...">
+                        <ul class="d-flex flex-row justify-content-evenly list-unstyled px-5 fs-5">
+                            <li><ion-icon name="logo-facebook"></ion-icon></li>
+                            <li><ion-icon name="logo-twitter"></ion-icon></li>
+                            <li><ion-icon name="logo-instagram"></ion-icon></li>
+                        </ul>
+                        <div class="card-body">
+                            <h4 class="card-title text-center">Full Name</h4>
+                            <p class="card-text text-center">Designation</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card" style="width: 14rem;" id="container">
+                        <img src="./assets/close-up-smiling-man-with-folded-arms-field_1140-578.jpg"
+                            class="card-img-top" alt="...">
+                        <ul class="d-flex flex-row justify-content-evenly list-unstyled px-5 fs-5">
+                            <li><ion-icon name="logo-facebook"></ion-icon></li>
+                            <li><ion-icon name="logo-twitter"></ion-icon></li>
+                            <li><ion-icon name="logo-instagram"></ion-icon></li>
+                        </ul>
+                        <div class="card-body">
+                            <h4 class="card-title text-center">Full Name</h4>
+                            <p class="card-text text-center">Designation</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card" style="width: 14rem;" id="container">
+                        <img src="./assets/smiling-young-woman-near-grass-field-glass-office-building_53419-12243.avif"
+                            class="card-img-top" alt="...">
+                        <ul class="d-flex flex-row justify-content-evenly list-unstyled px-5 fs-5">
+                            <li><ion-icon name="logo-facebook"></ion-icon></li>
+                            <li><ion-icon name="logo-twitter"></ion-icon></li>
+                            <li><ion-icon name="logo-instagram"></ion-icon></li>
+                        </ul>
+                        <div class="card-body">
+                            <h4 class="card-title text-center">Full Name</h4>
+                            <p class="card-text text-center">Designation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- hero1-container starts here  -->
+        <div class="hero1-container">
+            <div class="row mt-5" id="row3">
+                <div class="col-12">
+                    <h6 class="text-success text-center"><span class="fw-bold fs-5">______</span>TESTIMONIAL<span
+                            class="fw-bold fs-5">______</span></h6>
+                    <h1 class="text-center">Our Clients Say!!!</h1>
+                </div>
+            </div>
+        </div>
+
+        <!-- hero8-container starts here  -->
+        <div class="hero8-container">
+            <div class="row mt-5 mx-5" id="row4">
+                <div class="col-lg-4">
+                    <img src="./assets/testinominal-1.avif" alt="" class="img-fluid rounded-circle" width="100"
+                        height="100">
+                    <h3 class="fw-normal">John Doe</h3>
+                    <p>Tempor erat elitr rebum clita dolor diam ipsum sit diam
+                        amet diam eos erat ipsum et lorem et sit sed stet lorem sit</p>
+
+                </div><!-- /.col-lg-4 -->
+
+                <div class="col-lg-4">
+                    <img src="./assets/testinominal-2.jpg" alt="" class="img-fluid rounded-circle" width="100"
+                        height="100">
+                    <h3 class="fw-normal">John Doe</h3>
+                    <p>Tempor erat elitr rebum clita dolor diam ipsum sit diam
+                        amet diam eos erat ipsum et lorem et sit sed stet lorem sit</p>
+
+                </div><!-- /.col-lg-4 -->
+
+                <div class="col-lg-4">
+                    <img src="./assets/testinominal-3.jpg" alt="" class="img-fluid rounded-circle" width="100"
+                        height="100">
+                    <h3 class="fw-normal">John Doe</h3>
+                    <p>Tempor erat elitr rebum clita dolor diam ipsum sit diam
+                        amet diam eos erat ipsum et lorem et sit sed stet lorem sit</p>
+
+                </div><!-- /.col-lg-4 -->
+            </div>
+        </div>
+    </section>
+
+    <!-- footer starts here  -->
+    <footer>
+        <footer class="py-5 bg-dark text-white mt-5">
+            <div class="row mx-3">
+                <div class="col-6 col-md-2 mb-3">
+                    <h4>Company</h4> <br>
+                    <h6><ion-icon name="chevron-forward-outline"></ion-icon>About Us</h6>
+                    <h6><ion-icon name="chevron-forward-outline"></ion-icon>Contact Us</h6>
+                    <h6><ion-icon name="chevron-forward-outline"></ion-icon>Privacy Policy</h6>
+                    <h6><ion-icon name="chevron-forward-outline"></ion-icon>Terms & Conditions</h6>
+                    <h6><ion-icon name="chevron-forward-outline"></ion-icon>FAQs & Help</h6>
+                </div>
+
+                <div class="col-6 col-md-2 mb-3">
+                    <h4>Contact</h4> <br>
+                    <h6><ion-icon name="location-outline"></ion-icon> 123 Street, New York, USA</h6>
+                    <h6><ion-icon name="call-outline"></ion-icon> +012 345 67890</h6>
+                    <h6><ion-icon name="mail-open-outline"></ion-icon> mail@domain.com</h6>
+                    <p class="px-3"><ion-icon name="logo-twitter"></ion-icon> <ion-icon name="logo-facebook"></ion-icon>
+                        <ion-icon name="logo-youtube"></ion-icon> <ion-icon name="logo-linkedin"></ion-icon>
+                    </p>
+                </div>
+
+                <div class="col-6 col-md-2 mb-3">
+                    <h4>Gallery</h4> <br>
+                    <div class="parent d-grid grid-template-rows-2">
+                        <div class="child"><img src="./assets/bg-2.jpg" alt="" width="80" height="80">
+                        </div>
+                        <div class="child"><img src="./assets/thailand-650468_1280.jpg" alt="" width="80" height="80">
+                        </div>
+                        <div class="child"><img src="./assets/bg-3.jpg" alt="" width="80" height="80">
+                        </div>
+                        <div class="child"><img src="./assets/phra-nakhon-si-ayutthaya-1822502_1280.jpg" alt=""
+                                width="80" height="80"></div>
+                        <div class="child"><img src="./assets/budapest-2750130_1280.jpg" alt="" width="80" height="80">
+                        </div>
+                        <div class="child"><img src="./assets/sea-5310426_1280.jpg" alt="" width="80" height="80"></div>
+                    </div>
+                </div>
+
+                <div class="col-md-5 offset-md-1   mb-3">
+                    <form>
+                        <h4>Newsletter</h4> <br>
+                        <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                        <p><input type="email" name="email" id="Email" placeholder="Your Email">
+                            <button class="btn btn-success" id="btn3">Sign Up</button>
+                        </p>
+                </div>
+                </form>
+            </div>
+            </div>
+
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                <p>© Your Site Name, All Rights Reserved.</p>
+                <ul class="list-unstyled d-flex mx-5">
+                    <li class="ms-3"><a class="link-body-emphasis text-white" href="#">
+                            Home</a></li>
+                    <li class="ms-3"><a class="link-body-emphasis text-white" href="#">Cookies</a></li>
+                    <li class="ms-3"><a class="link-body-emphasis text-white" href="#">Help</a></li>
+                    <li class="ms-3"><a class="link-body-emphasis text-white" href="#">FAQs</a></li>
+
+                </ul>
+            </div>
+        </footer>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
+
